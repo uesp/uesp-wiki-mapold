@@ -1,0 +1,17 @@
+#
+# Deployment file for the UESP maps source as used by the uespdeploy script.
+#
+
+name = uesp.wikimaps
+
+ignore = .hg*
+ignore = *.deploy
+ignore = *.sh
+
+dest = content1.uesp.net:/home/uesp/www/w/extensions/UespMap/
+dest = content2.uesp.net:/home/uesp/www/w/extensions/UespMap/
+dest = content3.uesp.net:/home/uesp/www/w/extensions/UespMap/
+
+# chown_source = :uespadmin -R *
+# chown_dest   = :uespadmin {dest}
+
