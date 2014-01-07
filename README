@@ -14,8 +14,13 @@ require modification to work in another site.
    Installation
 -----------------------
 
-   - Copy the files into the new directory 'UespMap' in your MediaWiki 
-     ./extensions/ directory.
+   - If installing to the UESP servers run the deploy script from the source
+     directory:
+		uespdeploy
+
+   - If installing on a non-UESP server can manually copy the files into the 
+     new directory 'UespMap' in your MediaWiki /.extensions/ directory.
+
    - Add the following line in your LocalSettings.php file:
           require_once("$IP/extensions/UespMap/UespMap.php");
 
