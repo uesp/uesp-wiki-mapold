@@ -26,7 +26,7 @@ $wgExtensionFunctions[] = 'registerUespMapExtension';
 $wgExtensionCredits['parserhook'][] = array(
 	'name' => 'UespMap',
 	'author' => 'Dave Humphrey',
-	'url' => 'http://www.uesp.net/wiki/UESPWiki:Extension_UESPMap',
+	'url' => '//www.uesp.net/wiki/UESPWiki:Extension_UESPMap',
 	'description' => 'Allows the UESP maps to be inserted into a wiki page with the optional ability to edit locations.',
 	'version' => 0.3
 );
@@ -77,7 +77,7 @@ function renderUespMap($input, $params, $parser)
 	$locy				= "";
 	$zoom				= "";
 	
-	$ExtensionURL = 'http://'.$_SERVER['HTTP_HOST'].$wgScriptPath.'/extensions/UespMap/';
+	$ExtensionURL = '//'.$_SERVER['HTTP_HOST'].$wgScriptPath.'/extensions/UespMap/';
 	
 		// Ensure the page is not cached because of the dynamic map content
 	$parser->disableCache();
